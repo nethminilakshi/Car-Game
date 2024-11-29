@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Car-Game</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme|Lobster|Sniglet&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="score_div">Score : <span id="score">0</span></div>
+
+    <div id="game_Name">
+      <h1 id="name"><u>Traffic Racer </u></h1>
+      <p style="font-size: 1.4em">HTML, CSS, JQuery</p>
+    </div>
+
+    <div id="pause_btn">
+      <img src="images/pauseButton.png" alt="" style="width: 10%" />
+    </div>
+
+    <div id="btn-play">
+      <img
+        src="images/Play.png"
+        alt="play button"
+        style="width: 10%"
+        id="play"
+      />
+
+      <audio
+        id="gameStartAudio"
+        src="/Audio/mixkit-car-ignition-1535.wav"
+      ></audio>
+      <audio
+        id="carStartAudio"
+        src="/Audio/mixkit-urban-city-sounds-and-light-car-traffic-369.wav"
+      ></audio>
+      <audio
+        id="carCrashAudio"
+        src="/Audio/mixkit-car-window-breaking-1551.wav"
+      ></audio>
+      <audio
+        id="carStopAudio"
+        src="/Audio/mixkit-speeding-swoosh-1484.wav"
+      ></audio>
+    </div>
+
+    <div class="wrapper">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+
+      <img
+        src="images/car-png-orange-6153474c46f5ac144c2a226e47f26baa-900x0.png"
+        alt="Car-orange"
+        class="car"
+        id="car1"
+      />
+      <img
+        src="images/car-png-orange-6153474c46f5ac144c2a226e47f26baa-900x0.png"
+        alt="Car-orange"
+        class="car"
+        id="car2"
+      />
+      <img
+        src="images/car-png-orange-6153474c46f5ac144c2a226e47f26baa-900x0.png"
+        alt="Car-orange"
+        class="car"
+        id="car3"
+      />
+      <img src="images/1828053.png" alt="blueCar" id="car" />
+    </div>
+
+    <div id="game-over-box">
+      <div style="text-align: center">
+        <img
+          src="images/gameover-colour-logo2.png"
+          alt="Game Over"
+          style="width: 20%"
+        />
+        <h2 class="score-box">Your Score : <span id="final-score"></span></h2>
+        <h2 class="score-box">High Score : <span id="High-score"></span></h2>
+        <img
+          id="btn-replay"
+          src="images/Play_Again_Button.png"
+          alt="Play Again"
+          style="width: 10%"
+        />
+      </div>
+    </div>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="controller/index-controller.js"></script>
+  </body>
+</html>
